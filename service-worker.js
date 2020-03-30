@@ -1,6 +1,6 @@
 var CACHE_NAME = 'zahnaerzte-weiler-v1';
 var urlsToCache = [
-  '',
+  '/',
   '/index.html',
   '/404.html',
   '/app_es6.bundle.js',
