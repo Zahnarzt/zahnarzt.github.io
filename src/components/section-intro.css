@@ -59,6 +59,9 @@ h4 {
   padding: 24px;
   font-style: normal;
   background-color: #f7f7f7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0000EE;
   color: inherit;
   text-decoration: none;
 }
