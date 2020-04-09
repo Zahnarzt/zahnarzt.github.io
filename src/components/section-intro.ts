@@ -48,13 +48,15 @@ export class SectionIntro extends LitElement {
           <p>Rufen Sie einfach an:<br>
           <b class="number">0221 / 79 50 14</b></p>
         </a>
-        <address class="address">
-          <h4>Anschrift</h4>
-          Zahnarztpraxis<br>
-          Dr. Hilgner & Dr. Vogt<br>
-          Weilerweg 33<br>
-          50765 Köln
-        </address>
+        <a class="address" href="./download/Zahnarztpraxis Dr. Hilgner & Dr. Vogt.vcf" title="Vistenkarte herunterladen." download>
+          <address>
+            <h4>Anschrift</h4>
+            Zahnarztpraxis<br>
+            Dr. Hilgner & Dr. Vogt<br>
+            Weilerweg 33<br>
+            50765 Köln
+          </address>
+        </a>
       </section>
     `;
   }
