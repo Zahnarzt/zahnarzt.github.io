@@ -43,7 +43,7 @@ export class SectionContact extends LitElement {
           Weilerweg 33<br>
           50765 Köln
         </address>
-        <a class="phone" href="tel:+49221795014">
+        <a class="phone" href="tel:+49221795014" title="Rufen Sie einfach an mit einem Mausklick.">
           <h4>Terminvereinbarungen</h4>
           <p>Rufen Sie einfach an:<br>
           <b class="number">0221 / 79 50 14</b></p>
