@@ -29,10 +29,6 @@ export class SectionIntro extends LitElement {
         <header class="section__header">
           <h1 slot="headline">Zahnarztpraxis<br>Dr. Karina Hilgner<br>Dr. Benjamin Vogt</h1>
         </header>
-        <!-- <header>
-          <h2>Zahnärzte</h2>
-          <h1>Dr. Karina Hilgner<br><span></span>Dr. Benjamin Vogt</h1>
-        </header> -->
         <app-picture class="picture"
                      alt="Intro Bild"
                      default="./images/index/intro.jpg"
