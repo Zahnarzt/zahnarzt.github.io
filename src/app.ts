@@ -95,7 +95,7 @@ export class MyApp extends connect(store)(LitElement) {
 
       updateMetadata({
         title: pageTitle,
-        description: pageTitle
+        // description: pageTitle
         // This object also takes an image property, that points to an img src.
       });
     }
