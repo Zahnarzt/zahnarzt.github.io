@@ -27,7 +27,7 @@ h1 {
   letter-spacing: 0.067em;
 }
 
-h1::first-line {
+h1:first-line {
   font-size: 0.75em;
   letter-spacing: 0em;
   color: #7b7b7b;
