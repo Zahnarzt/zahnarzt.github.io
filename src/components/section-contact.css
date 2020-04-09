@@ -92,6 +92,10 @@ iframe {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .phone {
   position: relative;
   grid-area: phone;
