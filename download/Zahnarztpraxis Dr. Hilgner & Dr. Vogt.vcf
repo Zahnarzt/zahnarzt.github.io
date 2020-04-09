@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.15.4//EN
+N:;;;;
+FN:Zahnarztpraxis Dr. Hilgner & Dr. Vogt
+ORG:Zahnarztpraxis Dr. Hilgner & Dr. Vogt;
+EMAIL;type=INTERNET;type=WORK;type=pref:zahnaerzte.weiler@gmail.com
+TEL;type=WORK;type=VOICE;type=pref:+49 221 79 50 14
+TEL;type=WORK;type=FAX:+49 221 790 25 95
+ADR;type=WORK;type=pref:;;Weilerweg 33;Köln;;50765;
+NOTE:Öffnungszeiten\nMo-Do: 08:00 - 20:00 Uhr\nFr:         07:00 - 19:00  Uhr
+item1.URL;type=pref:https://zahnaerzte-weiler.de
+item1.X-ABLabel:_$!<HomePage>!$_
+X-ABShowAs:COMPANY
+END:VCARD
