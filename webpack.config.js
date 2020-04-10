@@ -17,6 +17,11 @@ const polyfils = [
     flatten: true
   },
   {
+    from: resolve(`${webcomponents}/bundles/**.*`),
+    to: 'vendor/bundles',
+    flatten: true
+  },
+  {
     from: resolve(`${webcomponents}/custom-elements-es5-adapter.js`),
     to: 'vendor',
     flatten: true
@@ -29,9 +34,7 @@ module.exports = ({ mode }) => {
     resolve: {
       extensions: ['.js', '.ts', '.md']
     },
-    entry: {
-      'app': ['babel-polyfill', './src/app.ts']
-    },
+    entry: ['babel-polyfill', './src/app.ts'],
     output: {
       publicPath: 'dist/',
       path: path.resolve(__dirname, 'dist'),
