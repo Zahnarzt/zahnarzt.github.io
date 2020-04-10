@@ -56,32 +56,4 @@ export class SectionIntro extends LitElement {
       </section>
     `;
   }
-
-  _checkOpen() {
-    const day = this._date.getDay();
-    const hours = this._date.getHours();
-    const min = this._date.getMinutes();
-    const sec = this._date.getSeconds();
-
-    console.log(`${day}:${hours}:${min}:${sec}`);
-    if (day === 6 || day === 7) {
-      console.log('closed sa-so');
-      return this._businessOpen = false;
-    } else if (
-      day >= 1 && day <= 4
-      && hours >= 8 || hours < 20
-    ) {
-      console.log('open mo-do');
-      return this._businessOpen = true;
-    } else if (
-      day === 5
-      && hours >= 7 || hours < 19
-    ) {
-      console.log('open fr');
-      return this._businessOpen = true;
-    } else {
-      console.log('closed ruhezeit');
-      return this._businessOpen = false;
-    }
-  }
 }
