@@ -30,9 +30,9 @@ export class SectionIntro extends LitElement {
           <h1 slot="headline">Zahnarztpraxis<br>Dr. Karina Hilgner<br>Dr. Benjamin Vogt</h1>
         </header>
         <lazy-image class="picture small border"
-                    src="./images/index/intro-hilgner-vogt-672.jpeg"
+                    src="./images/index/intro-hilgner-vogt-672.jp2"
                     sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
-                    srcset="./images/index/intro-hilgner-vogt-296.jpeg 296w, ./images/index/intro-hilgner-vogt-320.jpeg 320w, ./images/index/intro-hilgner-vogt-390.jpeg 390w, ./images/index/intro-hilgner-vogt-672.jpeg 672w, ./images/index/intro-hilgner-vogt-794.jpeg 794w, ./images/index/intro-hilgner-vogt-1028.jpeg 1028w, ./images/index/intro-hilgner-vogt-1600.jpeg 1600w"
+                    srcset="./images/index/intro-hilgner-vogt-296.jp2 296w, ./images/index/intro-hilgner-vogt-320.jp2 320w, ./images/index/intro-hilgner-vogt-390.jp2 390w, ./images/index/intro-hilgner-vogt-672.jp2 672w, ./images/index/intro-hilgner-vogt-794.jp2 794w, ./images/index/intro-hilgner-vogt-1028.jp2 1028w, ./images/index/intro-hilgner-vogt-1600.jp2 1600w"
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
         <div class="times">
