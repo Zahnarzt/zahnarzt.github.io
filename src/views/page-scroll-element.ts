@@ -1,4 +1,4 @@
-import { html, property } from 'lit-element';
+import { property } from 'lit-element';
 import { PageViewElement } from './page-view-element';
 import '../components/section-hero';
 import '../components/section-content';
@@ -15,22 +15,6 @@ export class PageScrollElement extends PageViewElement {
 
   @property({type: Array})
   articles: Array<IArticle> = [];
-
-  protected render() {
-    return html`
-      <section-hero
-        .header=${this.header}
-        .articles=${this.articles}
-        @click="${this._handleClickSubnav}"
-      >
-      </section-hero>
-      ${this.articles.map((article) =>
-        html`
-         <section-content id=${article.href} content=${article.content}></section-content>
-        `
-      )}
-    `;
-  }
 
   _handleClickSubnav(event) {
     event.preventDefault();

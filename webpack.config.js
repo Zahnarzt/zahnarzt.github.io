@@ -41,14 +41,14 @@ module.exports = ({ mode }) => {
       filename: '[name].[hash].js',
       chunkFilename: '[id].[hash].js'
     },
-    /* devServer: {
+    devServer: {
       inline: true,
       host: '127.0.0.1',
       port: portFinderSync.getPort(8080),
       compress: true,
       historyApiFallback: true,
       writeToDisk: true
-    }, */
+    },
     module: {
       rules: [
         {

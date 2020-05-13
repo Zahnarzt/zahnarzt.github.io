@@ -24,12 +24,9 @@ Niederlassung in eigener Praxis in Köln Volkhoven-Weiler
 1996  
 Promotion
   
+
 #### Mitgliedschaften  
- 
    - Zahnärztekammer Nordrhein
-  
    - Dt. Gesellschaft für Zahn-, Mund- und Kieferheilkunde
- 
    - Dt. Gesellschaft für Kinderheilkunde
- 
    - Zahnärzteinitiative Köln

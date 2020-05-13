@@ -1,4 +1,4 @@
-import { customElement } from 'lit-element';
+import { customElement, html } from 'lit-element';
 import { PageScrollElement } from './page-scroll-element';
 
 import Formulare from '../../markdown/informationen/formulare.md';
@@ -28,5 +28,28 @@ export class ViewInformations extends PageScrollElement {
         content: Zahnzusatz
       }
     ]
+  }
+
+  protected render() {
+    return html`
+      <section-hero
+        .header=${this.header}
+        .articles=${this.articles}
+        @click="${this._handleClickSubnav}"
+      >
+        <lazy-image slot="picture"
+                    class="picture small border"
+                    src="./images/informationen/empfang-672.jpeg"
+                    sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
+                    srcset="./images/informationen/empfang-296.jpeg 296w, ./images/informationen/empfang-320.jpeg 320w, ./images/informationen/empfang-390.jpeg 390w, ./images/informationen/empfang-672.jpeg 672w, ./images/informationen/empfang-794.jpeg 794w, ./images/informationen/empfang-1028.jpeg 1028w"
+                    alt="Dr. Hilgner und Dr.Vogt">
+        </lazy-image>
+      </section-hero>
+      ${this.articles.map((article) =>
+        html`
+         <section-content id=${article.href} content=${article.content}></section-content>
+        `
+      )}
+    `;
   }
 }

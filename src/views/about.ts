@@ -1,4 +1,4 @@
-import { customElement } from 'lit-element';
+import { customElement, html } from 'lit-element';
 import { PageScrollElement } from './page-scroll-element';
 
 import DrHilgner from '../../markdown/ueber-uns/dr-hilgner.md';
@@ -46,5 +46,28 @@ export class ViewAbout extends PageScrollElement {
         content: Praxisleitbild
       }
     ]
+  }
+
+  protected render() {
+    return html`
+      <section-hero
+        .header=${this.header}
+        .articles=${this.articles}
+        @click="${this._handleClickSubnav}"
+      >
+        <lazy-image slot="picture"
+                    class="picture small border"
+                    src="./images/ueber-uns/ueber-hilgner-vogt-672.jpeg"
+                    sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
+                    srcset="./images/ueber-uns/ueber-hilgner-vogt-296.jpeg 296w, ./images/ueber-uns/ueber-hilgner-vogt-320.jpeg 320w, ./images/ueber-uns/ueber-hilgner-vogt-390.jpeg 390w, ./images/ueber-uns/ueber-hilgner-vogt-672.jpeg 672w, ./images/ueber-uns/ueber-hilgner-vogt-794.jpeg 794w, ./images/ueber-uns/ueber-hilgner-vogt-1028.jpeg 1028w"
+                    alt="Dr. Hilgner und Dr.Vogt">
+        </lazy-image>
+      </section-hero>
+      ${this.articles.map((article) =>
+        html`
+         <section-content id=${article.href} content=${article.content}></section-content>
+        `
+      )}
+    `;
   }
 }

@@ -8,7 +8,7 @@ import StyleGrid from './css-grid.css';
 import StyleIntro from './section-intro.css';
 
 import './section-header';
-import './app-picture';
+import './lazy-image';
 
 @customElement('section-intro')
 export class SectionIntro extends LitElement {
@@ -29,11 +29,12 @@ export class SectionIntro extends LitElement {
         <header class="section__header">
           <h1 slot="headline">Zahnarztpraxis<br>Dr. Karina Hilgner<br>Dr. Benjamin Vogt</h1>
         </header>
-        <app-picture class="picture"
-                     alt="Intro Bild"
-                     default="./images/index/intro.jpg"
-        >
-        </app-picture>
+        <lazy-image class="picture small border"
+                    src="./images/index/intro-hilgner-vogt-672.jpeg"
+                    sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
+                    srcset="./images/index/intro-hilgner-vogt-296.jpeg 296w, ./images/index/intro-hilgner-vogt-320.jpeg 320w, ./images/index/intro-hilgner-vogt-390.jpeg 390w, ./images/index/intro-hilgner-vogt-672.jpeg 672w, ./images/index/intro-hilgner-vogt-794.jpeg 794w, ./images/index/intro-hilgner-vogt-1028.jpeg 1028w"
+                    alt="Dr. Hilgner und Dr.Vogt">
+        </lazy-image>
         <div class="times">
           <h4>Öffnungszeiten</h4>
           <span class="time-row"><b>Mo-Do:</b><time>08:00 - 20:00 Uhr</time></span>

@@ -4,6 +4,8 @@ import {
   LitElement,
   property
 } from 'lit-element';
+
+import './lazy-image';
 import StyleGrid from './css-grid.css';
 import Style from './section-hero.css';
 
@@ -52,11 +54,7 @@ export class SectionHero extends LitElement {
           )}
           </ul>
         </div>
-        <app-picture class="picture"
-                     alt="Intro Bild"
-                     default="./images/index/intro.jpg"
-        >
-        </app-picture>
+        <slot name="picture"></slot>
       </section>
     `;
   }

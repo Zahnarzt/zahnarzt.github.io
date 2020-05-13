@@ -48,10 +48,12 @@ header {
   justify-content: flex-end;
 }
 
+slot[name=picture]::slotted(lazy-image),
 .picture {
   grid-area: picture;
 }
 
+slot[name=picture]::slotted(lazy-image::before),
 .picture:before {
   content: "";
   position: absolute;

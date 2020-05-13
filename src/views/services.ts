@@ -1,4 +1,4 @@
-import { customElement } from 'lit-element';
+import { customElement, html } from 'lit-element';
 import { PageScrollElement } from './page-scroll-element';
 
 import Prophylaxe from '../../markdown/leistungen/prophylaxe.md';
@@ -70,5 +70,28 @@ export class ViewServices extends PageScrollElement {
         content: Implantatberatung
       }
     ]
+  }
+
+  protected render() {
+    return html`
+      <section-hero
+        .header=${this.header}
+        .articles=${this.articles}
+        @click="${this._handleClickSubnav}"
+      >
+        <lazy-image slot="picture"
+                    class="picture small border"
+                    src="./images/leistungen/leistungen-672.jpeg"
+                    sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
+                    srcset="./images/leistungen/leistungen-296.jpeg 296w, ./images/leistungen/leistungen-320.jpeg 320w, ./images/leistungen/leistungen-390.jpeg 390w, ./images/leistungen/leistungen-672.jpeg 672w, ./images/leistungen/leistungen-794.jpeg 794w, ./images/leistungen/leistungen-1028.jpeg 1028w"
+                    alt="Dr. Hilgner und Dr.Vogt">
+        </lazy-image>
+      </section-hero>
+      ${this.articles.map((article) =>
+        html`
+         <section-content id=${article.href} content=${article.content}></section-content>
+        `
+      )}
+    `;
   }
 }

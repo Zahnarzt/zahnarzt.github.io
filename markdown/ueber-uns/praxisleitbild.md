@@ -4,7 +4,7 @@ Seit dem wir 1992 unsere zahnärztliche Praxisgemeinschaft gegründet haben, lie
 7-20 Uhr oder ein eigenes Praxislabor, möchten wir unseren Patienten demonstrieren, dass wir ein modernes Dienstleistungsunternehmen darstellen.
 Wir arbeiten nach aktuellen Qualitäts- und Hygienestandards. Unser wichtigstes Ziel ist es eine bestmögliche individuelle Versorgung für unsere Patienten zu erreichen und durch innovative Zahnheilkunde gerüstet zu sein.  
   
-**Patienten**
+**Patienten**  
 Oberstes Ziel ist die Zufriedenheit unserer Patienten. Dabei steht der Patient im Mittelpunkt unseres Handelns. Fortlaufende Patientenorientierung deckt dabei Schwachstellen im Praxisablauf auf und hilft die Wünsche unserer Patienten zu befriedigen. Wir sind bemüht ein angstfreies und vertrauen volles Umfeld zu schaffen und längere Wartezeiten zu vermeiden.  
   
 **Team**  

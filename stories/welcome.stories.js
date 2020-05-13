@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { withKnobs, text } from "@storybook/addon-knobs";
-import '../src/app-element';
+import '../src/app.ts';
 
 export default {
   title: 'LitElement Demo',
