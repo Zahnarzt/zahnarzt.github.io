@@ -83,7 +83,7 @@ export class ViewServices extends PageScrollElement {
                     class="picture small border"
                     src="./images/leistungen/leistungen-672.jpeg"
                     sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
-                    srcset="./images/leistungen/leistungen-296.jpeg 296w, ./images/leistungen/leistungen-320.jpeg 320w, ./images/leistungen/leistungen-390.jpeg 390w, ./images/leistungen/leistungen-672.jpeg 672w, ./images/leistungen/leistungen-794.jpeg 794w, ./images/leistungen/leistungen-1028.jpeg 1028w"
+                    srcset="./images/leistungen/leistungen-296.jpeg 296w, ./images/leistungen/leistungen-320.jpeg 320w, ./images/leistungen/leistungen-390.jpeg 390w, ./images/leistungen/leistungen-672.jpeg 672w, ./images/leistungen/leistungen-794.jpeg 794w, ./images/leistungen/leistungen-1028.jpeg 1028w, ./images/leistungen/leistungen-1600.jpeg 1600w"
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>

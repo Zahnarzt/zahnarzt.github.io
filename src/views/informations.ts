@@ -41,7 +41,7 @@ export class ViewInformations extends PageScrollElement {
                     class="picture small border"
                     src="./images/informationen/empfang-672.jpeg"
                     sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
-                    srcset="./images/informationen/empfang-296.jpeg 296w, ./images/informationen/empfang-320.jpeg 320w, ./images/informationen/empfang-390.jpeg 390w, ./images/informationen/empfang-672.jpeg 672w, ./images/informationen/empfang-794.jpeg 794w, ./images/informationen/empfang-1028.jpeg 1028w"
+                    srcset="./images/informationen/empfang-296.jpeg 296w, ./images/informationen/empfang-320.jpeg 320w, ./images/informationen/empfang-390.jpeg 390w, ./images/informationen/empfang-672.jpeg 672w, ./images/informationen/empfang-794.jpeg 794w, ./images/informationen/empfang-1028.jpeg 1028w, ./images/informationen/empfang-1600.jpeg 1600w"
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>

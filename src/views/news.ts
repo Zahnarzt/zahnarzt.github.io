@@ -41,7 +41,7 @@ export class ViewNews extends PageScrollElement {
                     class="picture small border"
                     src="./images/aktuelles/aktuelles-672.jpeg"
                     sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
-                    srcset="./images/aktuelles/aktuelles-296.jpeg 296w, ./images/aktuelles/aktuelles-320.jpeg 320w, ./images/aktuelles/aktuelles-390.jpeg 390w, ./images/aktuelles/aktuelles-672.jpeg 672w, ./images/aktuelles/aktuelles-794.jpeg 794w, ./images/aktuelles/aktuelles-1028.jpeg 1028w"
+                    srcset="./images/aktuelles/aktuelles-296.jpeg 296w, ./images/aktuelles/aktuelles-320.jpeg 320w, ./images/aktuelles/aktuelles-390.jpeg 390w, ./images/aktuelles/aktuelles-672.jpeg 672w, ./images/aktuelles/aktuelles-794.jpeg 794w, ./images/aktuelles/aktuelles-1028.jpeg 1028w, , ./images/aktuelles/aktuelles-1600.jpeg 1600w"
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>

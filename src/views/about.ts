@@ -59,7 +59,7 @@ export class ViewAbout extends PageScrollElement {
                     class="picture small border"
                     src="./images/ueber-uns/ueber-hilgner-vogt-672.jpeg"
                     sizes="(min-width: 1025px) 63vw, (min-width: 768px) 87vw, 92vw"
-                    srcset="./images/ueber-uns/ueber-hilgner-vogt-296.jpeg 296w, ./images/ueber-uns/ueber-hilgner-vogt-320.jpeg 320w, ./images/ueber-uns/ueber-hilgner-vogt-390.jpeg 390w, ./images/ueber-uns/ueber-hilgner-vogt-672.jpeg 672w, ./images/ueber-uns/ueber-hilgner-vogt-794.jpeg 794w, ./images/ueber-uns/ueber-hilgner-vogt-1028.jpeg 1028w"
+                    srcset="./images/ueber-uns/ueber-hilgner-vogt-296.jpeg 296w, ./images/ueber-uns/ueber-hilgner-vogt-320.jpeg 320w, ./images/ueber-uns/ueber-hilgner-vogt-390.jpeg 390w, ./images/ueber-uns/ueber-hilgner-vogt-672.jpeg 672w, ./images/ueber-uns/ueber-hilgner-vogt-794.jpeg 794w, ./images/ueber-uns/ueber-hilgner-vogt-1028.jpeg 1028w, ./images/ueber-uns/ueber-hilgner-vogt-1600.jpeg 1600w"
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>
