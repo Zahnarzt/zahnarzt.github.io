@@ -11,6 +11,19 @@ Behandlung, Prophylaxe, Röntgen
 ![Team Person Hilgner D](images/ueber-uns/team-hilgner-d.jpg)  
 Behandlung, Prophylaxe & Röntgen
 
+![Team Person Hilgner E](images/ueber-uns/team-hilgner-e.jpg)  
+Behandlung, Prophylaxe, Röntgen
+
+![Team Person Hilgner F](images/ueber-uns/team-hilgner-f.jpg)  
+Behandlung, Prophylaxe, Röntgen
+
+![Team Person Hilgner G](images/ueber-uns/team-hilgner-g.jpg)  
+Ganzes Team 
+
+## Prophylaxe
+
+![Labor](images/ueber-uns/prophylaxe.jpg)
+
 ## Team Vogt
 ![Team Person Vogt A](images/ueber-uns/team-vogt-a.jpg)  
 Rezeption & Organisation  
