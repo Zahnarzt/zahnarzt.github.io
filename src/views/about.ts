@@ -4,6 +4,7 @@ import { PageScrollElement } from './page-scroll-element';
 import DrHilgner from '../../markdown/ueber-uns/dr-hilgner.md';
 import DrVogt from '../../markdown/ueber-uns/dr-vogt.md';
 import Team from '../../markdown/ueber-uns/team.md';
+import Praxis from '../../markdown/ueber-uns/unsere-praxis.md';
 import Labor from '../../markdown/ueber-uns/labor.md';
 import Praxisleitbild from '../../markdown/ueber-uns/praxisleitbild.md'
 
@@ -34,6 +35,11 @@ export class ViewAbout extends PageScrollElement {
         href: 'team',
         name: 'Unser Team',
         content: Team
+      },
+      {
+        href: 'praxis',
+        name: 'Unsere Praxis',
+        content: Praxis
       },
       {
         href: 'labor',

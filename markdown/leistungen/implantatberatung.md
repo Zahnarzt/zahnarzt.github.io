@@ -1,5 +1,7 @@
 ## Implantatberatung
 
+![Implantatberatung](images/leistungen/implantatberatung.jpeg) 
+
 - Einzelzahnlücke
 - Zahnloser Problemkiefer
 - Prothesenintoleranz

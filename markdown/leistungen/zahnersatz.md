@@ -1,5 +1,7 @@
 ## Zahnersatz
 
+![Zahnersatz](images/leistungen/zahnersatz.jpeg) 
+
 - Implantatprothetik (festsitzend und herausnehmbar)   
 - Teilkronen (Keramik, Gold)
 - Kronen (Metallkeramik, Vollkeramik, Zirkon, CAD/CAM)

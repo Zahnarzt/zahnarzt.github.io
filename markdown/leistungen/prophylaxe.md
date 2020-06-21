@@ -1,6 +1,7 @@
 ## Prophylaxe
 ### Zähne gesund erhalten
 
+![Prophylaxe](images/leistungen/prophylaxe.jpeg) 
 Zu den Leistungen unserer Prophylaxe zählen:
 - Professionelle Zahnreinigung (PZR)
 - Airflow (Entfernen von Kaffee-, Tee- oder Nikotinbelägen)
