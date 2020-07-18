@@ -1,14 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-gap: 24px;
+}
+
+/* Device = Tablets, Ipads */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 60px 60px 60px 60px 60px 60px 60px 60px 60px 1fr;
+    grid-gap: 24px;
+  }
+}
+
+/* Device = Laptops, Desktops */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: 1fr 68px 68px 68px 68px 68px 68px 68px 68px 68px 1fr;
+    grid-gap: 36px;
+  }
+}
+
+/* Device = Desktops */
+@media (min-width: 1281px) {
+  .grid-container {
+    grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px 100px 100px 1fr;
+  }
+}
+
 :host {
-  display: block;
-  box-sizing: border-box;
   position: fixed;
   top: 0;
+  right:0;
   left: 0;
+  display: block;
   width: 100%;
+  box-sizing: border-box;
   text-align: center;
   background-color: var(--app-background-color-default);
   color: var(--app-text-color-default);
   border-bottom: 1px dotted var(--app-background-color-dark);
+  transform: none;
   z-index: 999;
 }
 
@@ -25,16 +56,16 @@
   grid-area: logo;
   display: flex;
   align-items: center;
-  width: 138px;
+  width: 80px;
   height: auto;
-  padding: 0 var(--app-padding-medium);
-  margin: 0 0 0 calc(-1 * var(--app-padding-medium));
 }
 
 .menu {
   grid-area: menu;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
-  padding: var(--app-padding-medium) 0;
+  padding: 10px 0;
   margin-right: calc(-1 * var(--app-padding-medium));
   margin-left: auto;
 }
@@ -64,7 +95,7 @@ button span {
 
 .navigation {
   position: absolute;
-  top: 77px;
+  top: 73px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -73,7 +104,7 @@ button span {
   flex-direction: column;
   flex: 1 0 100%;
   align-items: flex-end;
-  padding: var(--app-padding-medium);
+  padding: 16px;
   background-color: var(--app-background-color-gray);
 }
 
@@ -85,7 +116,7 @@ button span {
   position: relative;
   padding: 3px 0;
   margin: 3px 0;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.03ch;
@@ -133,6 +164,12 @@ button span {
       ". logo logo navigation navigation navigation navigation navigation navigation navigation .";
   }
 
+  .logo {
+    width: 110px;
+    padding: 0 18px;
+    margin: 0 0 0 calc(-1 * var(--app-padding-medium));
+  }
+
   .menu {
     display: none;
   }
@@ -145,7 +182,7 @@ button span {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: (var(--app-padding-medium)) 0;
+    padding: 17px 0 17px 0;
     margin-right: calc(-1 * var(--app-padding-small));
     margin-left: auto;
     background-color: transparent;
@@ -154,7 +191,7 @@ button span {
   .navigation > a {
     padding: 0 6px;
     margin: 0 3px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: var(--app-background-color-default);
     border-bottom-width: 1px;
     border-bottom-style: solid;

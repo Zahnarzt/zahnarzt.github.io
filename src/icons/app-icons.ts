@@ -1,6 +1,4 @@
-import { html } from 'lit-element';
-
-export const logo = html`<svg xmlns="http://www.w3.org/2000/svg" width="122" height="72" viewBox="0 0 61.4 37.8" aria-labelledby="logoTitle logoDesc" role="img">
+export const Logo = `<svg xmlns="http://www.w3.org/2000/svg" width="122" height="72" viewBox="0 0 61.4 37.8" aria-labelledby="logoTitle logoDesc" role="img">
 <title id="logoTitle">Logo Zahnarztpraxis</title>
 <desc id="logoDesc">Ein Apfel und ein gesunder Zahn.</desc>
 <style type="text/css">
@@ -23,5 +21,5 @@ C22.7,6.1,24.1,7.6,25.9,9.4z"/>
 <path class="st6" d="M13.2,3c2.5,0,4.8,0.2,10.1,5.4c-9.6,0-9.3,3.5-14.7,3.5C5.3,11.9,0,8.7,0,8.7s2-0.3,5.2-2.1
 C7.9,5,9.4,3,13.2,3z"/>
 </svg>`;
-export const menuIcon = html`<svg width="36" height="36" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>`;
-export const menuClose = html`<svg  width="36" height="36" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>`;
+export const IconMenu = `<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>`;
+export const IconClose = `<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>`;

@@ -22,9 +22,9 @@ import {
 import StyleComponent from './app.css';
 
 // This are components to load
-import './components/app-header';
+import './components/app-shell/app-header';
 import './components/section-ribbon';
-import './components/app-footer';
+import './components/app-shell/app-footer';
 
 @customElement('my-app')
 export class MyApp extends connect(store)(LitElement) {
