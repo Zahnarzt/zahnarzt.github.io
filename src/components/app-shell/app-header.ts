@@ -248,11 +248,12 @@ export default class AppHeader extends connect(store)(HTMLElement) {
           this._setTransitionDuration(top, now);
           this._scrollInView = true;
         }
-      } /* else {
-        console.log('headerHeight', this.style.transform);
-        this.style.transform = `translate3d(0, ${-top}px, 0)`;
-        this._setTransitionDuration(top, now);
-      } */
+      } else {
+        if (this.style.transform !== `translate3d(0px, 0px, 0px)`) {
+          this.style.transform = `translate3d(0, ${-top}px, 0)`;
+          this._setTransitionDuration(top, now);
+        }
+      }
     }
 
     this._scrollLastTop = top;
