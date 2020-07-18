@@ -20,7 +20,7 @@ export class PageScrollElement extends PageViewElement {
     event.preventDefault();
     const composedPath = event.composedPath()[0];
     const hash = composedPath?.getAttribute('href');
-    const htmlId = hash.replace('#', '');
+    const htmlId = hash?.replace('#', '');
     const element = this.shadowRoot?.getElementById(htmlId);
 
     if (element) {
