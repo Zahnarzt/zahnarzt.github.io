@@ -28,12 +28,12 @@ export class SectionContact extends LitElement {
           <h1>Kontakt</h1>
         </header>
         <div class="maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.747655486801!2d6.88280045121726!3d51.0208105794577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf31b57cf1f951%3A0x79dde2ee6e58c33!2sWeilerweg%2033%2C%2050765%20K%C3%B6ln!5e0!3m2!1sde!2sde!4v1585387018486!5m2!1sde!2sde"
-            frameborder="0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.7474227155976!2d6.882781951217275!3d51.02081487945781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf31b57c5361ab%3A0x869a03e553df029e!2sDr.%20Karina%20Hilgner%20%26%20Dr.%20Benjamin%20Vogt!5e0!3m2!1sde!2sde!4v1595085765570!5m2!1sde!2sde"
+                  frameborder="0"
+                  style="border:0;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0">
           </iframe>
         </div>
         <a class="address" href="./download/Zahnarztpraxis Dr. Hilgner & Dr. Vogt.vcf" title="Vistenkarte herunterladen." download>
