@@ -95,6 +95,12 @@ export const updateOffline: ActionCreator<ThunkResult> = (offline: boolean) => (
 };
 
 export const updateMenuState: ActionCreator<AppActionUpdateMenuState> = (opened: boolean) => {
+  if (opened) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.removeProperty('overflow');
+  }
+
   return {
     type: UPDATE_MENU_STATE,
     opened

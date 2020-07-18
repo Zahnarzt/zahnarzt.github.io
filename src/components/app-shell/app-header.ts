@@ -208,7 +208,6 @@ export default class AppHeader extends connect(store)(HTMLElement) {
   }
 
   private _onMenuClick() {
-    // ToDo dispatch only if bool changes
     store.dispatch(updateMenuState(this._menu.opened ? false : true));
   }
 
@@ -236,8 +235,13 @@ export default class AppHeader extends connect(store)(HTMLElement) {
           this._scrollInView = false;
         }
       } else {
-        this.style.transform = `translate3d(0, ${-top}px, 0)`;
-        this._setTransitionDuration(top, now);
+        if (top >= 0 && this._scrollInView) {
+          this.style.transform = `translate3d(0, ${-top}px, 0)`;
+          this.style.transitionDuration = '0ms';
+          if (top === 0) {
+            this._scrollInView = true;
+          }
+        }
       }
     }
     // scroll direction up

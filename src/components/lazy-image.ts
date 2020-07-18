@@ -41,7 +41,6 @@ export default class LazyImage extends HTMLElement {
    */
   constructor() {
     super();
-    console.log('lazy image constructor');
 
     // Add the main template to the component
     const templateElement = document.createElement('template');
