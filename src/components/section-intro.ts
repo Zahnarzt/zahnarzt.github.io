@@ -36,18 +36,18 @@ export class SectionIntro extends LitElement {
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
         <div class="times">
-          <h4>Öffnungszeiten</h4>
+          <h3>Öffnungszeiten</h3>
           <span class="time-row"><b>Mo-Do:</b><time>08:00 - 20:00 Uhr</time></span>
           <span class="time-row"><b>Fr:</b><time>07:00 - 19:00 Uhr</time></span>
         </div>
         <a class="phone" href="tel:+49221795014" title="Rufen Sie einfach an mit einem Mausklick.">
-          <h4>Terminvereinbarungen</h4>
+          <h3>Terminvereinbarungen</h3>
           <p>Rufen Sie einfach an:<br>
           <b class="number">0221 / 79 50 14</b></p>
         </a>
         <a class="address" href="./download/Zahnarztpraxis Dr. Hilgner & Dr. Vogt.vcf" title="Vistenkarte herunterladen." download>
           <address>
-            <h4>Anschrift</h4>
+            <h3>Anschrift</h3>
             Zahnarztpraxis<br>
             Dr. Hilgner & Dr. Vogt<br>
             Weilerweg 33<br>

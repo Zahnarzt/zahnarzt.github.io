@@ -43,7 +43,7 @@ export class SectionHero extends LitElement {
           <h1>${headline}</h1>
         </header>
         <div class="box box-one">
-          <h4>Inhalt</h4>
+          <h3>Inhalt</h3>
           <ul>
           ${this.articles.map((article) =>
             html`
