@@ -52,7 +52,7 @@ export class MyApp extends connect(store)(LitElement) {
       <!-- Main content -->
       <main role="main" class="main-content">
         <section-ribbon>
-          <p>Gemeinsam gegen Corona-Viren. <a href="./aktuelles">Mehr erfahren...</a></p>
+        <p>Geschlossen vom 23.12.2020 bis zum 03.01.2021 <a href="./aktuelles">Mehr erfahren...</a></p>
         </section-ribbon>
 
         <view-index class="page" ?active="${this._page === 'index'}"></view-index>

@@ -1,6 +1,7 @@
 import { customElement, html } from 'lit-element';
 import { PageScrollElement } from './page-scroll-element';
 
+import Ferien from '../../markdown/aktuelles/weihnachtsferien.md';
 import Corona from '../../markdown/aktuelles/corona.md';
 import Abschied from '../../markdown/aktuelles/abschied.md';
 
@@ -17,6 +18,11 @@ export class ViewNews extends PageScrollElement {
     ];
 
     this.articles = [
+      {
+        href: 'weihnachtsferien',
+        name: 'Weihnachtsferien',
+        content: Ferien
+      },
       {
         href: 'corona',
         name: 'Gemeinsam gegen Corona-Viren',
