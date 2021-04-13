@@ -22,15 +22,15 @@ We use **Webpack** to build and **Babel** to transpile the code.
 
 Install Packages
 ```
-npm i
+yarn
 ```
 Run Project (development)
 ```
-npm run dev
+yarn dev
 ```
 Run Project (production)
 ```
-npm run prod
+yarn build
 ```
 Run testing with Karma
 ```

@@ -1,9 +1,9 @@
 import { customElement, html } from 'lit-element';
 import { PageScrollElement } from './page-scroll-element';
 
-import Ferien from '../../markdown/aktuelles/weihnachtsferien.md';
+import Stellenangebote from '../../markdown/aktuelles/stellenanzeigen.md';
+import Urlaub from '../../markdown/aktuelles/urlaub.md';
 import Corona from '../../markdown/aktuelles/corona.md';
-import Abschied from '../../markdown/aktuelles/abschied.md';
 
 @customElement('view-news')
 export class ViewNews extends PageScrollElement {
@@ -19,19 +19,19 @@ export class ViewNews extends PageScrollElement {
 
     this.articles = [
       {
-        href: 'weihnachtsferien',
-        name: 'Weihnachtsferien',
-        content: Ferien
+        href: 'stellenanzeigen',
+        name: 'Stellenanzeigen',
+        content: Stellenangebote
+      },
+      {
+        href: 'urlaub',
+        name: 'Urlaub',
+        content: Urlaub
       },
       {
         href: 'corona',
         name: 'Gemeinsam gegen Corona-Viren',
         content: Corona
-      },
-      {
-        href: 'abschied',
-        name: 'Abschied Herr Jansen',
-        content: Abschied
       }
     ]
   }

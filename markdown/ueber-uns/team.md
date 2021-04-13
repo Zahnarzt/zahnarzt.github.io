@@ -3,19 +3,16 @@
 Rezeption, Verwaltung, Abrechnung  
 
 ![Team Person Hilgner B](images/ueber-uns/team-hilgner-b.jpg)  
-Behandlung, Prophylaxe, Röntgen  
+Behandlung, Prophylaxe 
 
 ![Team Person Hilgner C](images/ueber-uns/team-hilgner-c.jpg)  
-Behandlung, Prophylaxe, Röntgen  
+Behandlung, Prophylaxe
 
 ![Team Person Hilgner D](images/ueber-uns/team-hilgner-d.jpg)  
-Behandlung, Prophylaxe & Röntgen
+Behandlung, Prophylaxe
 
 ![Team Person Hilgner E](images/ueber-uns/team-hilgner-e.jpg)  
-Behandlung, Prophylaxe, Röntgen
-
-![Team Person Hilgner F](images/ueber-uns/team-hilgner-f.jpg)  
-Behandlung, Prophylaxe, Röntgen
+Behandlung, Prophylaxe
 
 ![Team Person Hilgner G](images/ueber-uns/team-hilgner-g.jpg)  
 Ganzes Team 
@@ -32,7 +29,7 @@ Rezeption & Organisation
 Behandlung & Prophylaxe  
 
 ![Team Person Vogt C](images/ueber-uns/team-vogt-c.jpg)  
-Behandlung & Prophylaxe  
+Behandlung & Prophylaxe, Materialverwaltung
 
 ![Team Person Vogt D](images/ueber-uns/team-vogt-d.jpg)  
-Behandlung, Prophylaxe, Materialverwaltung
+Behandlung, Prophylaxe
