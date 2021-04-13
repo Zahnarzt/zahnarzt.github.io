@@ -20,7 +20,7 @@ const Template = (_page: string) => `
       <a ?selected="${_page === 'impressum'}" href="/impressum">Impressum</a> |
       <a ?selected="${_page === 'datenschutz'}" href="/datenschutz">Datenschutz</a>
     </p>
-    <p>Copyright &copy; 2020 Zahnärzte Dr. Hilgner & Dr. Vogt. Alle Rechte vorbehalten.</p>
+    <p>Copyright &copy; ${new Date().getFullYear()} Zahnärzte Dr. Hilgner & Dr. Vogt. Alle Rechte vorbehalten.</p>
   </div>
 </footer>
 `;
