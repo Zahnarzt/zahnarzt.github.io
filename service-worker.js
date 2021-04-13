@@ -1,4 +1,4 @@
-var CACHE_NAME = 'zahnaerzte-weiler-v.1.11';
+var CACHE_NAME = 'zahnaerzte-weiler-v.1.12';
 var urlsToCache = [
   '/',
   '/index.html',
