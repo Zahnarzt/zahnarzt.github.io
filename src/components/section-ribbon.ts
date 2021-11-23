@@ -1,8 +1,5 @@
-import {
-  customElement,
-  html,
-  LitElement
-} from 'lit-element';
+import { LitElement, html } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import StyleGrid from './css-grid.css';
 import StyleRibbon from './section-ribbon.css';
 

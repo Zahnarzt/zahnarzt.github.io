@@ -1,17 +1,15 @@
-import {
-  customElement,
-  html,
-  LitElement,
-  property
-} from 'lit-element';
+import { LitElement, html } from 'lit';
+import { property, customElement } from 'lit/decorators.js';
 
 import './lazy-image';
 import StyleGrid from './css-grid.css';
 import Style from './section-hero.css';
 
-interface IArticle {
+export interface IArticle {
   href: string;
   name: string;
+  content: string | null;
+  subnavigation?: Array<IArticle>;
 }
 
 @customElement('section-hero')
@@ -45,13 +43,64 @@ export class SectionHero extends LitElement {
         <div class="box box-one">
           <h3>Inhalt</h3>
           <ul>
-          ${this.articles.map((article) =>
+          <!-- ${this.articles.map((article) =>
             html`
               <li>
                 <a href="#${article.href}">${article.name}</a>
               </li>
             `
-          )}
+          )} -->
+          ${this.articles.map((article) => {
+            // if (article.content) {
+            //   return html`
+            //     <li>
+            //       <a href="#${article.href}">${article.name}</a>
+            //     </li>
+            //   `
+            // }
+            return html`
+              <li>
+              ${article.subnavigation ?
+                html`
+                  <span>${article.name}</span>
+                  <ul>
+                    ${article.subnavigation.map((subarticle) =>
+                      html`
+                        <li><a href="#${subarticle.href}">${subarticle.name}</a></li>
+                      `
+                    )}
+                  </ul>
+                `:
+                html`<li><a href="#${article.href}">${article.name}</a></li>`
+              }
+              </li>
+            `
+          })}
+          <!-- ${this.articles.map((article) => {
+            if (article.content) {
+              return html`
+                <li>
+                  <a href="#${article.href}">${article.name}</a>
+                </li>
+              `
+            } else
+            if (article.subnavigation) {
+
+              return article.subnavigation.map((subarticle) => {
+                if (subarticle.content) {
+                  return html`
+                    <li>
+                      <a href="#${subarticle.href}">${subarticle.name}</a>
+                    </li>
+                  `
+                } else {
+                  return html``;
+                }
+              })
+            } else {
+              return html``;
+            }
+          })} -->
           </ul>
         </div>
         <slot name="picture"></slot>

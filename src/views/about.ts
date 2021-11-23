@@ -1,9 +1,13 @@
-import { customElement, html } from 'lit-element';
+import { html } from 'lit';
+import { customElement } from 'lit/decorators.js';
+
 import { PageScrollElement } from './page-scroll-element';
 
 import DrHilgner from '../../markdown/ueber-uns/dr-hilgner.md';
 import DrVogt from '../../markdown/ueber-uns/dr-vogt.md';
-import Team from '../../markdown/ueber-uns/team.md';
+import TeamHilgner from '../../markdown/ueber-uns/team-hilger.md';
+import TeamProphylaxe from '../../markdown/ueber-uns/team-prophylaxe.md';
+import TeamVogt from '../../markdown/ueber-uns/team-vogt.md';
 import Praxis from '../../markdown/ueber-uns/unsere-praxis.md';
 import Labor from '../../markdown/ueber-uns/labor.md';
 import Praxisleitbild from '../../markdown/ueber-uns/praxisleitbild.md'
@@ -34,7 +38,24 @@ export class ViewAbout extends PageScrollElement {
       {
         href: 'team',
         name: 'Unser Team',
-        content: Team
+        content: null,
+        subnavigation: [
+          {
+            href: 'team-hilgner',
+            name: 'Team Hilgner',
+            content: TeamHilgner
+          },
+          {
+            href: 'team-prophylaxe',
+            name: 'Prophylaxe',
+            content: TeamProphylaxe
+          },
+          {
+            href: 'team-vogt',
+            name: 'Team Vogt',
+            content: TeamVogt
+          }
+        ]
       },
       {
         href: 'praxis',
@@ -69,11 +90,25 @@ export class ViewAbout extends PageScrollElement {
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>
-      ${this.articles.map((article) =>
-        html`
-         <section-content id=${article.href} content=${article.content}></section-content>
-        `
-      )}
+      ${this.articles.map((article) => {
+        if (article.content) {
+          return html`
+            <section-content id=${article.href} content=${article.content}></section-content>
+          `
+        } else if (article.subnavigation) {
+          return article.subnavigation.map((subarticle) => {
+            if (subarticle.content) {
+              return html`
+                <section-content id=${subarticle.href} content=${subarticle.content}></section-content>
+              `
+            } else {
+              return html``;
+            }
+          })
+        } else {
+          return html``;
+        }
+      })}
     `;
   }
 }

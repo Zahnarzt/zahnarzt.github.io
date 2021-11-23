@@ -1,4 +1,5 @@
-import { LitElement, property } from 'lit-element';
+import { LitElement } from 'lit';
+import {property} from 'lit/decorators.js';
 
 export class PageViewElement extends LitElement {
   @property({type: Boolean})

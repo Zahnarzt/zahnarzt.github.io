@@ -1,13 +1,8 @@
-import { property } from 'lit-element';
+import { property } from 'lit/decorators.js';
 import { PageViewElement } from './page-view-element';
+import { IArticle } from '../components/section-hero';
 import '../components/section-hero';
 import '../components/section-content';
-
-interface IArticle {
-  href: string;
-  name: string;
-  content: string;
-}
 
 export class PageScrollElement extends PageViewElement {
   @property({type: Array})

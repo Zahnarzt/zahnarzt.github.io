@@ -1,7 +1,8 @@
 import 'regenerator-runtime/runtime';
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
 
-import { LitElement, html, property, PropertyValues, customElement } from 'lit-element';
+import { LitElement, html, PropertyValues } from 'lit';
+import { property, customElement } from 'lit/decorators.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 import { installMediaQueryWatcher } from 'pwa-helpers/media-query.js';
 import { installOfflineWatcher } from 'pwa-helpers/network.js';

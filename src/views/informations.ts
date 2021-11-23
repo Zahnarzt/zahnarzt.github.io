@@ -1,4 +1,5 @@
-import { customElement, html } from 'lit-element';
+import { html } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import { PageScrollElement } from './page-scroll-element';
 
 import Formulare from '../../markdown/informationen/formulare.md';
@@ -45,11 +46,25 @@ export class ViewInformations extends PageScrollElement {
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>
-      ${this.articles.map((article) =>
-        html`
-         <section-content id=${article.href} content=${article.content}></section-content>
-        `
-      )}
+      ${this.articles.map((article) => {
+        if (article.content) {
+          return html`
+            <section-content id=${article.href} content=${article.content}></section-content>
+          `
+        } else if (article.subnavigation) {
+          return article.subnavigation.map((subarticle) => {
+            if (subarticle.content) {
+              return html`
+                <section-content id=${subarticle.href} content=${subarticle.content}></section-content>
+              `
+            } else {
+              return html``;
+            }
+          })
+        } else {
+          return html``;
+        }
+      })}
     `;
   }
 }

@@ -1,9 +1,6 @@
-import {
-  customElement,
-  html,
-  LitElement,
-  property
-} from 'lit-element';
+import { LitElement, html } from 'lit';
+import { property, customElement } from 'lit/decorators.js';
+
 import StyleGrid from './css-grid.css';
 import StyleIntro from './section-intro.css';
 

@@ -1,4 +1,5 @@
-import { html, customElement } from 'lit-element';
+import { html } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import { PageViewElement } from './page-view-element';
 
 import '../components/section-intro';

@@ -1,7 +1,9 @@
-import { customElement, html } from 'lit-element';
+import { html } from 'lit';
+import { customElement } from 'lit/decorators.js';
 import { PageScrollElement } from './page-scroll-element';
 
-import Stellenangebote from '../../markdown/aktuelles/stellenanzeigen.md';
+import StelleZFA from '../../markdown/aktuelles/stelle-zfa.md';
+import AusbildungZFA from '../../markdown/aktuelles/ausbildung-zfa.md';
 import Urlaub from '../../markdown/aktuelles/urlaub.md';
 import Corona from '../../markdown/aktuelles/corona.md';
 
@@ -21,7 +23,19 @@ export class ViewNews extends PageScrollElement {
       {
         href: 'stellenanzeigen',
         name: 'Stellenanzeigen',
-        content: Stellenangebote
+        content: null,
+        subnavigation: [
+          {
+            href: 'stelle-zva',
+            name: 'Zahnmedizinische Fachangestellte',
+            content: StelleZFA
+          },
+          {
+            href: 'ausbildung-zva',
+            name: 'Ausbildung zur zahnmedizinischen Fachangestellte',
+            content: AusbildungZFA
+          }
+        ]
       },
       {
         href: 'urlaub',
@@ -51,11 +65,25 @@ export class ViewNews extends PageScrollElement {
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>
-      ${this.articles.map((article) =>
-        html`
-         <section-content id=${article.href} content=${article.content}></section-content>
-        `
-      )}
+      ${this.articles.map((article) => {
+        if (article.content) {
+          return html`
+            <section-content id=${article.href} content=${article.content}></section-content>
+          `
+        } else if (article.subnavigation) {
+          return article.subnavigation.map((subarticle) => {
+            if (subarticle.content) {
+              return html`
+                <section-content id=${subarticle.href} content=${subarticle.content}></section-content>
+              `
+            } else {
+              return html``;
+            }
+          })
+        } else {
+          return html``;
+        }
+      })}
     `;
   }
 }

@@ -1,4 +1,6 @@
-import { customElement, html } from 'lit-element';
+import { html } from 'lit';
+import { customElement } from 'lit/decorators.js';
+
 import { PageScrollElement } from './page-scroll-element';
 
 import Prophylaxe from '../../markdown/leistungen/prophylaxe.md';
@@ -9,7 +11,7 @@ import ZahnaerztlicheChirugie from '../../markdown/leistungen/zahnaerztliche-chi
 import DysfunktionaleErkrankungen from '../../markdown/leistungen/dysfunktionele-erkrankungen.md';
 import Zahnersatz from '../../markdown/leistungen/zahnersatz.md';
 import AesthetischeZahnheilkunde from '../../markdown/leistungen/aesthetische-zahnheilkunde.md';
-import Implantatberatung from '../../markdown/leistungen/implantatberatung.md';
+import Implantologie from '../../markdown/leistungen/Implantologie.md';
 
 @customElement('view-services')
 export class ViewServices extends PageScrollElement {
@@ -65,9 +67,9 @@ export class ViewServices extends PageScrollElement {
         content: AesthetischeZahnheilkunde
       },
       {
-        href: 'implantatberatung',
-        name: 'Implantatberatung',
-        content: Implantatberatung
+        href: 'implantologie',
+        name: 'Implantologie',
+        content: Implantologie
       }
     ]
   }
@@ -87,11 +89,25 @@ export class ViewServices extends PageScrollElement {
                     alt="Dr. Hilgner und Dr.Vogt">
         </lazy-image>
       </section-hero>
-      ${this.articles.map((article) =>
-        html`
-         <section-content id=${article.href} content=${article.content}></section-content>
-        `
-      )}
+      ${this.articles.map((article) => {
+        if (article.content) {
+          return html`
+            <section-content id=${article.href} content=${article.content}></section-content>
+          `
+        } else if (article.subnavigation) {
+          return article.subnavigation.map((subarticle) => {
+            if (subarticle.content) {
+              return html`
+                <section-content id=${subarticle.href} content=${subarticle.content}></section-content>
+              `
+            } else {
+              return html``;
+            }
+          })
+        } else {
+          return html``;
+        }
+      })}
     `;
   }
 }

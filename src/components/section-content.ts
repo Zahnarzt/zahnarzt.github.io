@@ -1,10 +1,7 @@
-import {
-  customElement,
-  html,
-  LitElement,
-  property
-} from 'lit-element';
-import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+import { LitElement, html } from 'lit';
+import { property, customElement } from 'lit/decorators.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+
 import StyleGrid from './css-grid.css';
 import StyleContent from './section-content.css';
 
