@@ -3,7 +3,7 @@
   "@context" : "https://schema.org/",
   "@type" : "JobPosting",
   "title" : "Ausbildung zahnmedizinische Fachangestellte",
-  "description" : "<p>Möchtest du die verlässliche Assistenz des behandelnden Zahnarztes sein und möchtest du dich um das Wohlbefinden der Patienten in unserer Praxis kümmern, dann ist das die richtige Ausbildung für dich.</p><p>Dann freuen wir uns auf Ihre Bewerbung.</p>",
+  "description" : "<p>Möchtest du die verlässliche Assistenz des behandelnden Zahnarztes sein und möchtest du dich um das Wohlbefinden der Patienten in unserer Praxis kümmern, dann ist das die richtige Ausbildung für dich.</p><p>Dann freuen wir uns auf Ihre Bewerbung.</p><p>Die Zahnarztpraxis besteht seit 29 Jahren im Kölner Norden, wir bitten unseren Patienten außer KFO alle Bereiche der Zahnheilkunde an. Wir pflegen einen sehr persönlichen Kontakt mit unseren Patienten, viele Patienten kommen zu uns in der dritten Generation.</p>",
   "identifier": {
     "@type": "PropertyValue",
     "name": "Zahnärzte Weiler",

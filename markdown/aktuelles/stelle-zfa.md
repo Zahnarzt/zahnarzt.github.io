@@ -3,7 +3,7 @@
   "@context" : "https://schema.org/",
   "@type" : "JobPosting",
   "title" : "Zahnmedizinische Fachangestellte",
-  "description" : "<p>Wir suchen für die Anmeldung/Rezeption (keine Abrechnung) halbtags eine zuverlässige und freundliche ZFA (m/w/d).</p><p>Können Sie Geduld am Telefon aufbringen, sind Sie organisiert und haben Verständnis für die Probleme der Patienten? Dann bewerben Sie sich jetzt.</p><p>Die Arbeitszeit ist auf Nachmittage festgesetzt, zweimal wöchentlich von 14 bis 20 Uhr. Der Vertragsbeginn kann auf individuellen Wunsch angepasst werden.</p><p>Wiedereinsteiger sind auch herzlich willkommen.</p><p>Wir freuen uns von Ihnen zu hören!</p>",
+  "description" : "<p>Wir suchen für die Anmeldung/Rezeption (keine Abrechnung) halbtags eine zuverlässige und freundliche ZFA (m/w/d).</p><p>Können Sie Geduld am Telefon aufbringen, sind Sie organisiert und haben Verständnis für die Probleme der Patienten? Dann bewerben Sie sich jetzt.</p><p>Die Arbeitszeit ist auf Nachmittage festgesetzt, zweimal wöchentlich von 14 bis 20 Uhr. Der Vertragsbeginn kann auf individuellen Wunsch angepasst werden.</p><p>Wiedereinsteiger sind auch herzlich willkommen.</p><p>Wir freuen uns von Ihnen zu hören!</p><p>Die Zahnarztpraxis besteht seit 29 Jahren im Kölner Norden, wir bitten unseren Patienten außer KFO alle Bereiche der Zahnheilkunde an. Wir pflegen einen sehr persönlichen Kontakt mit unseren Patienten, viele Patienten kommen zu uns in der dritten Generation.</p>",
   "identifier": {
     "@type": "PropertyValue",
     "name": "Zahnärzte Weiler",

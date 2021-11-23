@@ -3,6 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import { PageScrollElement } from './page-scroll-element';
 
 import StelleZFA from '../../markdown/aktuelles/stelle-zfa.md';
+import StelleZFAStuhl from '../../markdown/aktuelles/stelle-zfa-stuhlassistenz.md';
 import AusbildungZFA from '../../markdown/aktuelles/ausbildung-zfa.md';
 import Urlaub from '../../markdown/aktuelles/urlaub.md';
 import Corona from '../../markdown/aktuelles/corona.md';
@@ -29,6 +30,11 @@ export class ViewNews extends PageScrollElement {
             href: 'stelle-zva',
             name: 'Zahnmedizinische Fachangestellte',
             content: StelleZFA
+          },
+          {
+            href: 'stelle-zva-stuhl',
+            name: 'Zahnmedizinische Fachangestellte für die Stuhlassistenz',
+            content: StelleZFAStuhl
           },
           {
             href: 'ausbildung-zva',
