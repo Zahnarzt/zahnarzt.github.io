@@ -1,4 +1,4 @@
-var CACHE_NAME = 'zahnaerzte-weiler-v.1.14';
+var CACHE_NAME = 'zahnaerzte-weiler-v.1.15';
 var urlsToCache = [
   '/',
   '/index.html',
@@ -46,21 +46,20 @@ self.addEventListener('install', function(event) {
   );
 });
 
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          // Return true if you want to remove this cache,
-          // but remember that caches are shared across
-          // the whole origin
-        }).map(function(cacheName) {
-          return caches.delete(cacheName);
+self.addEventListener('activate', event => {
+  // Remove old caches
+    event.waitUntil(
+      (async () => {
+        const keys = await caches.keys();
+        return keys.map(async (cache) => {
+          if(cache !== CACHE_NAME) {
+            console.log('Service Worker: Removing old cache: '+cache);
+            return await caches.delete(cache);
+          }
         })
-      );
-    })
-  );
-});
+      })()
+    )
+  })
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
