@@ -2,8 +2,8 @@
 
 Liebe Patientinnen, liebe Patienten,
 
-wir sind vom 24.12.2021 bis zum 02.01.2022 im Urlaub.
-Ab dem 03.01.2022 sind wir wieder wie gewohnt für Sie da.
+wir sind vom 24.12.2022 bis zum 01.01.2023 im Urlaub.
+Ab dem 02.01.2023 sind wir wieder wie gewohnt für Sie da.
 
 Mit freundlichen Grüßen
 Ihre Praxis Dr. Hilgner und Dr. Vogt

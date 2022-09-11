@@ -22,6 +22,11 @@ export class ViewNews extends PageScrollElement {
 
     this.articles = [
       {
+        href: 'urlaub',
+        name: 'Urlaub',
+        content: Urlaub
+      },
+      {
         href: 'stellenanzeigen',
         name: 'Stellenanzeigen',
         content: null,
@@ -42,11 +47,6 @@ export class ViewNews extends PageScrollElement {
             content: AusbildungZFA
           }
         ]
-      },
-      {
-        href: 'urlaub',
-        name: 'Urlaub',
-        content: Urlaub
       },
       {
         href: 'corona',
