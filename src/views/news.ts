@@ -6,7 +6,6 @@ import StelleZFA from '../../markdown/aktuelles/stelle-zfa.md';
 import StelleZFAStuhl from '../../markdown/aktuelles/stelle-zfa-stuhlassistenz.md';
 import AusbildungZFA from '../../markdown/aktuelles/ausbildung-zfa.md';
 import Urlaub from '../../markdown/aktuelles/urlaub.md';
-import Corona from '../../markdown/aktuelles/corona.md';
 
 @customElement('view-news')
 export class ViewNews extends PageScrollElement {
@@ -48,11 +47,6 @@ export class ViewNews extends PageScrollElement {
           }
         ]
       },
-      {
-        href: 'corona',
-        name: 'Gemeinsam gegen Corona-Viren',
-        content: Corona
-      }
     ]
   }
 

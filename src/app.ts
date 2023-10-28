@@ -52,9 +52,9 @@ export class MyApp extends connect(store)(LitElement) {
       <app-header></app-header>
       <!-- Main content -->
       <main role="main" class="main-content">
-        <section-ribbon>
+        <!-- <section-ribbon>
           <p>Gemeinsam gegen Corona-Viren. <a href="./aktuelles">Mehr erfahren...</a></p>
-        </section-ribbon>
+        </section-ribbon> -->
 
         <view-index class="page" ?active="${this._page === 'index'}"></view-index>
         <view-about class="page" ?active="${this._page === 'ueber-uns'}"></view-about>
